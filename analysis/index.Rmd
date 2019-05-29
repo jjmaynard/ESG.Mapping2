@@ -1,6 +1,5 @@
 ---
-title: "Ecological Site Mapping"
-author: "Jonathan J Maynard"
+title: "Overview"
 site: workflowr::wflow_site
 output:
   workflowr::wflow_html:
@@ -11,4 +10,4 @@ output:
 ![Sandy ESG near Las Cruces, NM (Summerford Mountain in background) -- March 22, 2019. Photo credit: Shawn Salley](esg1.png) <br>
 
 
-Welcome to my research website.
+Sandy ESG near Las Cruces, NM (Summerford Mountain in background) -- March 22, 2019. Photo credit: Shawn Salley.

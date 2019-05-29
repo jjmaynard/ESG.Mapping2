@@ -9,10 +9,9 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Jonathan J Maynard" />
 
 
-<title>Ecological Site Mapping</title>
+<title>Overview</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -320,15 +319,14 @@ div.section {
 
 
 
-<h1 class="title toc-ignore">Ecological Site Mapping</h1>
-<h4 class="author">Jonathan J Maynard</h4>
+<h1 class="title toc-ignore">Overview</h1>
 
 </div>
 
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -337,7 +335,7 @@ div.section {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -349,10 +347,10 @@ div.section {
 <strong>Last updated:</strong> 2019-05-28
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
-<strong>Knit directory:</strong> <code>ESG.Mapping/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
+<strong>Knit directory:</strong> <code>ESG.Mapping2/analysis/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
 </p>
 <p>
 This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis was created with <a
@@ -365,30 +363,57 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has staged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjjmaynardESGMappingtreed3b5f0246e34bf4f8674422098f68c1636fa7678targetblankd3b5f02a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/jjmaynard/ESG.Mapping/tree/d3b5f0246e34bf4f8674422098f68c1636fa7678" target="_blank">d3b5f02</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjjmaynardESGMapping2tree30db32efd0d9bc6f8ead6049f0318a4e45276cd6targetblank30db32ea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/jjmaynard/ESG.Mapping2/tree/30db32efd0d9bc6f8ead6049f0318a4e45276cd6" target="_blank">30db32e</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomjjmaynardESGMappingtreed3b5f0246e34bf4f8674422098f68c1636fa7678targetblankd3b5f02a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjjmaynardESGMapping2tree30db32efd0d9bc6f8ead6049f0318a4e45276cd6targetblank30db32ea" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 </p>
 <pre><code>
+Ignored files:
+    Ignored:    .RData
+    Ignored:    .Rhistory
+    Ignored:    .Rproj.user/
+    Ignored:    R/
+
+Untracked files:
+    Untracked:  docs/Originals/
+    Untracked:  docs/photothumb.db
+
 Unstaged changes:
-    Modified:   README.md
-    Modified:   analysis/_site.yml
+    Modified:   ESG.Mapping.Rproj
+    Modified:   analysis/index.Rmd
+
+Staged changes:
+    New:        .Rprofile
+    Modified:   .gitignore
+    Modified:   DESCRIPTION
+    Modified1:  ESG.Rproj
+    Modified2:  ESG.Mapping.Rproj
+    New:        README.md
+    New:        analysis/_site.yml
+    New:        analysis/about.Rmd
+    New:        analysis/index.Rmd
+    New:        analysis/license.Rmd
+    New:        code/README.md
+    New:        data/README.md
+    New:        docs/.nojekyll
+    New:        output/README.md
+    New:        workflowr.yml
 
 </code></pre>
 <p>
@@ -401,126 +426,15 @@ Note that any generated files, e.g. HTML, png, CSS, etc., are not included in t
 <hr>
 </div>
 <div id="versions" class="tab-pane fade">
-
 <p>
-These are the previous versions of the R Markdown and HTML files. If you’ve configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view them.
+There are no past versions. Publish this analysis with <code>wflow_publish()</code> to start tracking its development.
 </p>
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-File
-</th>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-<th>
-Message
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/jjmaynard/ESG.Mapping/blob/d3b5f0246e34bf4f8674422098f68c1636fa7678/analysis/index.Rmd" target="_blank">d3b5f02</a>
-</td>
-<td>
-jjmaynard
-</td>
-<td>
-2019-05-28
-</td>
-<td>
-Update index.Rmd for ESG.Mapping
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/jjmaynard/ESG.Mapping/13b3790aa7044a0ad0f4c4d711a29f54ad1d2cfd/docs/index.html" target="_blank">13b3790</a>
-</td>
-<td>
-jjmaynard
-</td>
-<td>
-2019-05-28
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/jjmaynard/ESG.Mapping/blob/b1ffa01a1d02200b9a7c15a0a8852b72c4743edd/analysis/index.Rmd" target="_blank">b1ffa01</a>
-</td>
-<td>
-jjmaynard
-</td>
-<td>
-2019-05-28
-</td>
-<td>
-Update index.Rmd for ESG.Mapping
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/jjmaynard/ESG.Mapping/bd3000c98f2a3d4e6e50202fec9a4699ec44b317/docs/index.html" target="_blank">bd3000c</a>
-</td>
-<td>
-jjmaynard
-</td>
-<td>
-2019-05-28
-</td>
-<td>
-Build site.
-</td>
-</tr>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/jjmaynard/ESG.Mapping/blob/b784b175625b2526036f99d810f940ad738daff9/analysis/index.Rmd" target="_blank">b784b17</a>
-</td>
-<td>
-jjmaynard
-</td>
-<td>
-2019-05-28
-</td>
-<td>
-Start workflowr project.
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 <hr>
 </div>
 </div>
 </div>
 <p><br> <img src="esg1.png" alt="Sandy ESG near Las Cruces, NM (Summerford Mountain in background) – March 22, 2019. Photo credit: Shawn Salley" /> <br></p>
-<p>Welcome to my research website.</p>
+<p>Sandy ESG near Las Cruces, NM (Summerford Mountain in background) – March 22, 2019. Photo credit: Shawn Salley.</p>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
